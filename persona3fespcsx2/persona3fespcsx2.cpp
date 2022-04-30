@@ -81,7 +81,7 @@ System::Void Form1::Form1_Load(System::Object^  sender, System::EventArgs^  e)
 
 System::Void Form1::comboBox1_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e)
 {
-	int index = comboBox1->SelectedIndex;
+	int index = PersonaBox->SelectedIndex;
 
 	//After ID 169, Theres a 21-sized dummy gap, so we have to skip it.
 	if (index > 169)
@@ -155,102 +155,107 @@ System::Void Form1::num_mc_money_ValueChanged(System::Object^  sender, System::E
 	setValue(COffsets::mc_money, index, 4);
 }
 
-System::Void Form1::persona1_level_ValueChanged(System::Object^  sender, System::EventArgs^  e)
+System::Void Form1::SlotBox_SelectedIndexChanged(System::Object^ sender, System::EventArgs^	e)
 {
-	int index = (int)persona1_level->Value;
+
+}
+
+System::Void Form1::persona_level_ValueChanged(System::Object^  sender, System::EventArgs^  e)
+{
+	int index = (int)persona_level->Value;
 
 	setValue(COffsets::persona1_level, index, 2);
 }
 
-System::Void Form1::persona1_st_ValueChanged(System::Object^  sender, System::EventArgs^  e)
+System::Void Form1::persona_st_ValueChanged(System::Object^  sender, System::EventArgs^  e)
 {
-	int index = (int)persona1_st->Value;
+	int index = (int)persona_st->Value;
 
 	setValue(COffsets::persona1_str, index, 1);
 }
 
-System::Void Form1::persona1_ma_ValueChanged(System::Object^  sender, System::EventArgs^  e)
+System::Void Form1::persona_ma_ValueChanged(System::Object^  sender, System::EventArgs^  e)
 {
-	int index = (int)persona1_ma->Value;
+	int index = (int)persona_ma->Value;
 
 	setValue(COffsets::persona1_mag, index, 1);
 }
 
-System::Void Form1::persona1_en_ValueChanged(System::Object^  sender, System::EventArgs^  e)
+System::Void Form1::persona_en_ValueChanged(System::Object^  sender, System::EventArgs^  e)
 {
-	int index = (int)persona1_en->Value;
+	int index = (int)persona_en->Value;
 
 	setValue(COffsets::persona1_en, index, 1);
 }
 
-System::Void Form1::persona1_ag_ValueChanged(System::Object^  sender, System::EventArgs^  e)
+System::Void Form1::persona_ag_ValueChanged(System::Object^  sender, System::EventArgs^  e)
 {
-	int index = (int)persona1_ag->Value;
+	int index = (int)persona_ag->Value;
 
 	setValue(COffsets::persona1_ag, index, 1);
 }
 
-System::Void Form1::persona1_lu_ValueChanged(System::Object^  sender, System::EventArgs^  e)
+System::Void Form1::persona_lu_ValueChanged(System::Object^  sender, System::EventArgs^  e)
 {
-	int index = (int)persona1_lu->Value;
+	int index = (int)persona_lu->Value;
 
 	setValue(COffsets::persona1_luc, index, 1);
 }
 
-System::Void Form1::persona1_magic1_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e)
+System::Void Form1::persona_skill1_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e)
 {
-	int index = (int)persona1_magic1->SelectedIndex;
+	int index = (int)persona_skill1->SelectedIndex;
 
-	setValue(COffsets::persona1_magic1, index, 2);
+	setValue(COffsets::persona1_skill1, index, 2);
 }
 
-System::Void Form1::persona1_magic2_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e)
+System::Void Form1::persona_skill2_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e)
 {
-	int index = (int)persona1_magic2->SelectedIndex;
+	int index = (int)persona_skill2->SelectedIndex;
 
-	setValue(COffsets::persona1_magic2, index, 2);
+	setValue(COffsets::persona1_skill2, index, 2);
 }
 
-System::Void Form1::persona1_magic3_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e)
+System::Void Form1::persona_skill3_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e)
 {
-	int index = (int)persona1_magic3->SelectedIndex;
+	int index = (int)persona_skill3->SelectedIndex;
 
-	setValue(COffsets::persona1_magic3, index, 2);
+	setValue(COffsets::persona1_skill3, index, 2);
 }
 
-System::Void Form1::persona1_magic4_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e)
+System::Void Form1::persona_skill4_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e)
 {
-	int index = (int)persona1_magic4->SelectedIndex;
+	int index = (int)persona_skill4->SelectedIndex;
 
-	setValue(COffsets::persona1_magic4, index, 2);
+	setValue(COffsets::persona1_skill4, index, 2);
 }
 
-System::Void Form1::persona1_magic5_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e)
+System::Void Form1::persona_skill5_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e)
 {
-	int index = (int)persona1_magic5->SelectedIndex;
+	int index = (int)persona_skill5->SelectedIndex;
 
-	setValue(COffsets::persona1_magic5, index, 2);
+	setValue(COffsets::persona1_skill5, index, 2);
 }
 
-System::Void Form1::persona1_magic6_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e)
+System::Void Form1::persona_skill6_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e)
 {
-	int index = (int)persona1_magic6->SelectedIndex;
+	int index = (int)persona_skill6->SelectedIndex;
 
-	setValue(COffsets::persona1_magic6, index, 2);
+	setValue(COffsets::persona1_skill6, index, 2);
 }
 
-System::Void Form1::persona1_magic7_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e)
+System::Void Form1::persona_skill7_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e)
 {
-	int index = (int)persona1_magic7->SelectedIndex;
+	int index = (int)persona_skill7->SelectedIndex;
 
-	setValue(COffsets::persona1_magic7, index, 2);
+	setValue(COffsets::persona1_skill7, index, 2);
 }
 
-System::Void Form1::persona1_magic8_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e)
+System::Void Form1::persona_skill8_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e)
 {
-	int index = (int)persona1_magic8->SelectedIndex;
+	int index = (int)persona_skill8->SelectedIndex;
 
-	setValue(COffsets::persona1_magic8, index, 2);
+	setValue(COffsets::persona1_skill8, index, 2);
 }
 
 
