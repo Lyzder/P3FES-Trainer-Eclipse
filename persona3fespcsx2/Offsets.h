@@ -42,32 +42,31 @@ public:
 	static LONG persona2_en = 0x20836BFE;
 	static LONG persona2_ag = 0x20836BFF;
 	static LONG persona2_luc = 0x20836C00;
-	/*V Sin actualizar V*/
-	static LONG persona2_skill1 = 0x20836BB8;
-	static LONG persona2_skill2 = 0x20836BBA;
-	static LONG persona2_skill3 = 0x20836BBC;
-	static LONG persona2_skill4 = 0x20836BBE;
-	static LONG persona2_skill5 = 0x20836BC0;
-	static LONG persona2_skill6 = 0x20836BC2;
-	static LONG persona2_skill7 = 0x20836BC4;
-	static LONG persona2_skill8 = 0x20836BC6;
+	static LONG persona2_skill1 = 0x20836BEC;
+	static LONG persona2_skill2 = 0x20836BEE;
+	static LONG persona2_skill3 = 0x20836BF0;
+	static LONG persona2_skill4 = 0x20836BF2;
+	static LONG persona2_skill5 = 0x20836BF4;
+	static LONG persona2_skill6 = 0x20836BF6;
+	static LONG persona2_skill7 = 0x20836BF8;
+	static LONG persona2_skill8 = 0x20836BFA;
 
 	//Persona 3
-	static LONG persona3_modifer = 0x20836BAE;
-	static LONG persona3_level = 0x20836BB0;
-	static LONG persona3_str = 0x20836BC8;
-	static LONG persona3_mag = 0x20836BC9;
-	static LONG persona3_en = 0x20836BCA;
-	static LONG persona3_ag = 0x20836BCB;
-	static LONG persona3_luc = 0x20836BCC;
-	static LONG persona3_skill1 = 0x20836BB8;
-	static LONG persona3_skill2 = 0x20836BBA;
-	static LONG persona3_skill3 = 0x20836BBC;
-	static LONG persona3_skill4 = 0x20836BBE;
-	static LONG persona3_skill5 = 0x20836BC0;
-	static LONG persona3_skill6 = 0x20836BC2;
-	static LONG persona3_skill7 = 0x20836BC4;
-	static LONG persona3_skill8 = 0x20836BC6;
+	static LONG persona3_modifer = 0x20836C16;
+	static LONG persona3_level = 0x20836C18;
+	static LONG persona3_str = 0x20836C31;
+	static LONG persona3_mag = 0x20836C32;
+	static LONG persona3_en = 0x20836C33;
+	static LONG persona3_ag = 0x20836C34;
+	static LONG persona3_luc = 0x20836C35;
+	static LONG persona3_skill1 = 0x20836C20;
+	static LONG persona3_skill2 = 0x20836C22;
+	static LONG persona3_skill3 = 0x20836C24;
+	static LONG persona3_skill4 = 0x20836C26;
+	static LONG persona3_skill5 = 0x20836C28;
+	static LONG persona3_skill6 = 0x20836C2A;
+	static LONG persona3_skill7 = 0x20836C2C;
+	static LONG persona3_skill8 = 0x20836C2E;
 
 	//Persona 4
 	static LONG persona4_modifer = 0x20836BAE;
