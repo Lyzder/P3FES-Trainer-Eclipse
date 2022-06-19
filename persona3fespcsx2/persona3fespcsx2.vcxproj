@@ -70,7 +70,6 @@
       <AdditionalDependencies>kernel32.lib;user32.lib;advapi32.lib;</AdditionalDependencies>
       <SubSystem>Windows</SubSystem>
       <EntryPointSymbol>main</EntryPointSymbol>
-      <Version>1.0.0.0</Version>
     </Link>
     <Bscmake>
       <SuppressStartupBanner>true</SuppressStartupBanner>
