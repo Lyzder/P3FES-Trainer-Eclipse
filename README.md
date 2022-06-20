@@ -1,13 +1,13 @@
 # Persona 3 FES - PCSX2 Trainer
 
-This is a windows-only USA Persona 3 FES PCSX2 Trainer. In the future, I will tackle a cross-platform, cross-region trainer for PCSX2, but for now, you're are limited to USA and windows.
+Enhanced P3FES trainer originally made by desukuran. It allows for MC and Persona editing through PCSX2
 
 Current Features:
-- Ability to edit your persona and access any persona.
-- Ability to edit your persona's stats and magic. 
- - You can choose any enemy-only magic skills. And access debug/dummy moves.
+- Ability to edit your personas in any slot.
+- Ability to edit your personas' stats and skills, including enemy-only and debug skills.
 - Ability to edit the main character's stats, mood and personality.
 
-Planned Features:
-- Changing item counts, etc.
-- Social Link editting.
+Planned features:
+- Ability to edit save files.
+- Load skills and personas from index files to allow compatibility with mods.
+- Ability to edit teammate's stats and skills.
