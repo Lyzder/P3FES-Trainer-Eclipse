@@ -16,4 +16,4 @@ How to use:
   1. Open the game through PCSX2
   2. Start the game either by choosing new game or loading a save file
   3. Open P3FES Trainer
-  4. To confirm a choice from a drop down menu, either press enter or click the option. Clossing the menu any other way WON'T affect the game
+  4. To confirm a choice from a drop down menu, either press enter or click the option. Closing the menu any other way WON'T affect the game
