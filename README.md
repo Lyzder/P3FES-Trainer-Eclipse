@@ -4,7 +4,7 @@ Enhanced P3FES trainer originally made by desukuran. It allows for MC and Person
 
 Current Features:
 - Ability to edit your personas in any slot.
-- Ability to edit your personas' stats and skills, including enemy-only and debug skills.
+- Ability to edit your personas' skills, including enemy-only and debug skills.
 - Ability to edit the main character's stats, mood and personality.
 
 Planned features:
