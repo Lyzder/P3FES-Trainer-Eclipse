@@ -11,3 +11,9 @@ Planned features:
 - Ability to edit save files.
 - Load skills and personas from index files to allow compatibility with mods.
 - Ability to edit teammate's stats and skills.
+
+How to use:
+  1. Open the game through PCSX2
+  2. Start the game either by choosing new game or loading a save file
+  3. Open P3FES Trainer
+  4. To confirm a choice from a drop down menu, either press enter or click the option. Clossing the menu any other way WON'T affect the game
