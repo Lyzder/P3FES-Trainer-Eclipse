@@ -590,13 +590,15 @@ System::Void Form1::readValuesPersona()
 	}
 	PersonaBox->SelectedIndex = data;
 
+	//Reset the variable to clean up bytes
+	data = 0;
+
 	//Load Persona level and exp
 	ReadProcessMemory(pHandle, (LPVOID)ValueOffsets.level, &data, 2, 0);
 	persona_level->Value = data;
 	ReadProcessMemory(pHandle, (LPVOID)ValueOffsets.exp, &data, 4, 0);
 	persona_exp->Value = data;
 
-	//Reset the variable to clean up bytes
 	data = 0;
 
 	//Load skills
@@ -624,6 +626,8 @@ System::Void Form1::readValuesPersona()
 	ReadProcessMemory(pHandle, (LPVOID)ValueOffsets.skill8, &data, 2, 0);
 	if (data != 0)
 		persona_skill8->SelectedIndex = data;
+
+	data = 0;
 
 	//Load Persona stats
 	ReadProcessMemory(pHandle, (LPVOID)ValueOffsets.strength, &data, 1, 0);
