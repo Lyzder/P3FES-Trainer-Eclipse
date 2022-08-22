@@ -8,6 +8,7 @@ public:
 	
 	//MC
 	static LONG mc_level = 0x2083622A;
+	static LONG mc_exp = 0x20836268;
 	static LONG mc_current_hp = 0x2083622C;
 	static LONG mc_current_mp = 0x2083622E;
 	static LONG mc_equipped_persona = 0x20836BA8;
@@ -20,6 +21,7 @@ public:
 	//Persona 1
 	static LONG persona1_modifer = 0x20836BAE;
 	static LONG persona1_level = 0x20836BB0;
+	static LONG persona1_exp = 0x20836BB4;
 	static LONG persona1_str = 0x20836BC8;
 	static LONG persona1_mag = 0x20836BC9;
 	static LONG persona1_en = 0x20836BCA;
@@ -37,6 +39,7 @@ public:
 	//Persona 2
 	static LONG persona2_modifer = 0x20836BE2;
 	static LONG persona2_level = 0x20836BE4;
+	static LONG persona2_exp = 0x20836BE8;
 	static LONG persona2_str = 0x20836BFC;
 	static LONG persona2_mag = 0x20836BFD;
 	static LONG persona2_en = 0x20836BFE;
@@ -54,11 +57,12 @@ public:
 	//Persona 3
 	static LONG persona3_modifer = 0x20836C16;
 	static LONG persona3_level = 0x20836C18;
-	static LONG persona3_str = 0x20836C31;
-	static LONG persona3_mag = 0x20836C32;
-	static LONG persona3_en = 0x20836C33;
-	static LONG persona3_ag = 0x20836C34;
-	static LONG persona3_luc = 0x20836C35;
+	static LONG persona3_exp = 0x20836C1C;
+	static LONG persona3_str = 0x20836C30;
+	static LONG persona3_mag = 0x20836C31;
+	static LONG persona3_en = 0x20836C32;
+	static LONG persona3_ag = 0x20836C33;
+	static LONG persona3_luc = 0x20836C34;
 	static LONG persona3_skill1 = 0x20836C20;
 	static LONG persona3_skill2 = 0x20836C22;
 	static LONG persona3_skill3 = 0x20836C24;
@@ -71,11 +75,12 @@ public:
 	//Persona 4
 	static LONG persona4_modifer = 0x20836C4A;
 	static LONG persona4_level = 0x20836C4C;
-	static LONG persona4_str = 0x20836C65;
-	static LONG persona4_mag = 0x20836C66;
-	static LONG persona4_en = 0x20836C67;
-	static LONG persona4_ag = 0x20836C68;
-	static LONG persona4_luc = 0x20836C69;
+	static LONG persona4_exp = 0x20836C50;
+	static LONG persona4_str = 0x20836C64;
+	static LONG persona4_mag = 0x20836C65;
+	static LONG persona4_en = 0x20836C66;
+	static LONG persona4_ag = 0x20836C67;
+	static LONG persona4_luc = 0x20836C68;
 	static LONG persona4_skill1 = 0x20836C54;
 	static LONG persona4_skill2 = 0x20836C56;
 	static LONG persona4_skill3 = 0x20836C58;
@@ -88,11 +93,12 @@ public:
 	//Persona 5
 	static LONG persona5_modifer = 0x20836C7E;
 	static LONG persona5_level = 0x20836C80;
-	static LONG persona5_str = 0x20836C99;
-	static LONG persona5_mag = 0x20836C9A;
-	static LONG persona5_en = 0x20836C9B;
-	static LONG persona5_ag = 0x20836C9C;
-	static LONG persona5_luc = 0x20836C9D;
+	static LONG persona5_exp = 0x20836C84;
+	static LONG persona5_str = 0x20836C98;
+	static LONG persona5_mag = 0x20836C99;
+	static LONG persona5_en = 0x20836C9A;
+	static LONG persona5_ag = 0x20836C9B;
+	static LONG persona5_luc = 0x20836C9C;
 	static LONG persona5_skill1 = 0x20836C88;
 	static LONG persona5_skill2 = 0x20836C8A;
 	static LONG persona5_skill3 = 0x20836C8C;
@@ -105,11 +111,12 @@ public:
 	//Persona 6
 	static LONG persona6_modifer = 0x20836CB2;
 	static LONG persona6_level = 0x20836CB4;
-	static LONG persona6_str = 0x20836CCD;
-	static LONG persona6_mag = 0x20836CCE;
-	static LONG persona6_en = 0x20836CCF;
-	static LONG persona6_ag = 0x20836CD0;
-	static LONG persona6_luc = 0x20836CD1;
+	static LONG persona6_exp = 0x20836CB8;
+	static LONG persona6_str = 0x20836CCC;
+	static LONG persona6_mag = 0x20836CCD;
+	static LONG persona6_en = 0x20836CCE;
+	static LONG persona6_ag = 0x20836CCF;
+	static LONG persona6_luc = 0x20836CD0;
 	static LONG persona6_skill1 = 0x20836CBC;
 	static LONG persona6_skill2 = 0x20836CBE;
 	static LONG persona6_skill3 = 0x20836CC0;
@@ -122,11 +129,12 @@ public:
 	//Persona 7
 	static LONG persona7_modifer = 0x20836CE6;
 	static LONG persona7_level = 0x20836CE8;
-	static LONG persona7_str = 0x20836D01;
-	static LONG persona7_mag = 0x20836D02;
-	static LONG persona7_en = 0x20836D03;
-	static LONG persona7_ag = 0x20836D04;
-	static LONG persona7_luc = 0x20836D05;
+	static LONG persona7_exp = 0x20836CEC;
+	static LONG persona7_str = 0x20836D00;
+	static LONG persona7_mag = 0x20836D01;
+	static LONG persona7_en = 0x20836D02;
+	static LONG persona7_ag = 0x20836D03;
+	static LONG persona7_luc = 0x20836D04;
 	static LONG persona7_skill1 = 0x20836CF0;
 	static LONG persona7_skill2 = 0x20836CF2;
 	static LONG persona7_skill3 = 0x20836CF4;
@@ -139,11 +147,12 @@ public:
 	//Persona 8
 	static LONG persona8_modifer = 0x20836D1A;
 	static LONG persona8_level = 0x20836D1C;
-	static LONG persona8_str = 0x20836D35;
-	static LONG persona8_mag = 0x20836D36;
-	static LONG persona8_en = 0x20836D37;
-	static LONG persona8_ag = 0x20836D38;
-	static LONG persona8_luc = 0x20836D39;
+	static LONG persona8_exp = 0x20836D20;
+	static LONG persona8_str = 0x20836D34;
+	static LONG persona8_mag = 0x20836D35;
+	static LONG persona8_en = 0x20836D36;
+	static LONG persona8_ag = 0x20836D37;
+	static LONG persona8_luc = 0x20836D38;
 	static LONG persona8_skill1 = 0x20836D24;
 	static LONG persona8_skill2 = 0x20836D26;
 	static LONG persona8_skill3 = 0x20836D28;
@@ -156,11 +165,12 @@ public:
 	//Persona 9
 	static LONG persona9_modifer = 0x20836D4E;
 	static LONG persona9_level = 0x20836D50;
-	static LONG persona9_str = 0x20836D69;
-	static LONG persona9_mag = 0x20836D6A;
-	static LONG persona9_en = 0x20836D6B;
-	static LONG persona9_ag = 0x20836D6C;
-	static LONG persona9_luc = 0x20836D6D;
+	static LONG persona9_exp = 0x20836D54;
+	static LONG persona9_str = 0x20836D68;
+	static LONG persona9_mag = 0x20836D69;
+	static LONG persona9_en = 0x20836D6A;
+	static LONG persona9_ag = 0x20836D6B;
+	static LONG persona9_luc = 0x20836D6C;
 	static LONG persona9_skill1 = 0x20836D58;
 	static LONG persona9_skill2 = 0x20836D5A;
 	static LONG persona9_skill3 = 0x20836D5C;
@@ -173,11 +183,12 @@ public:
 	//Persona 10
 	static LONG persona10_modifer = 0x20836D82;
 	static LONG persona10_level = 0x20836D84;
-	static LONG persona10_str = 0x20836D9D;
-	static LONG persona10_mag = 0x20836D9E;
-	static LONG persona10_en = 0x20836D9F;
-	static LONG persona10_ag = 0x20836DA0;
-	static LONG persona10_luc = 0x20836DA1;
+	static LONG persona10_exp = 0x20836D88;
+	static LONG persona10_str = 0x20836D9C;
+	static LONG persona10_mag = 0x20836D9D;
+	static LONG persona10_en = 0x20836D9E;
+	static LONG persona10_ag = 0x20836D9F;
+	static LONG persona10_luc = 0x20836DA0;
 	static LONG persona10_skill1 = 0x20836D8C;
 	static LONG persona10_skill2 = 0x20836D8E;
 	static LONG persona10_skill3 = 0x20836D90;
@@ -190,11 +201,12 @@ public:
 	//Persona 11
 	static LONG persona11_modifer = 0x20836DB6;
 	static LONG persona11_level = 0x20836DB8;
-	static LONG persona11_str = 0x20836DD1;
-	static LONG persona11_mag = 0x20836DD2;
-	static LONG persona11_en = 0x20836DD3;
-	static LONG persona11_ag = 0x20836DD4;
-	static LONG persona11_luc = 0x20836DD5;
+	static LONG persona11_exp = 0x20836DBC;
+	static LONG persona11_str = 0x20836DD0;
+	static LONG persona11_mag = 0x20836DD1;
+	static LONG persona11_en = 0x20836DD2;
+	static LONG persona11_ag = 0x20836DD3;
+	static LONG persona11_luc = 0x20836DD4;
 	static LONG persona11_skill1 = 0x20836DC0;
 	static LONG persona11_skill2 = 0x20836DC2;
 	static LONG persona11_skill3 = 0x20836DC4;
@@ -207,11 +219,12 @@ public:
 	//Persona 12
 	static LONG persona12_modifer = 0x20836DEA;
 	static LONG persona12_level = 0x20836DEC;
-	static LONG persona12_str = 0x20836E05;
-	static LONG persona12_mag = 0x20836E06;
-	static LONG persona12_en = 0x20836E07;
-	static LONG persona12_ag = 0x20836E08;
-	static LONG persona12_luc = 0x20836E09;
+	static LONG persona12_exp = 0x20836DF0;
+	static LONG persona12_str = 0x20836E04;
+	static LONG persona12_mag = 0x20836E05;
+	static LONG persona12_en = 0x20836E06;
+	static LONG persona12_ag = 0x20836E07;
+	static LONG persona12_luc = 0x20836E08;
 	static LONG persona12_skill1 = 0x20836DF4;
 	static LONG persona12_skill2 = 0x20836DF6;
 	static LONG persona12_skill3 = 0x20836DF8;

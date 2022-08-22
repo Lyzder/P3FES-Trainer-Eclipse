@@ -111,6 +111,8 @@ namespace persona3fespcsx2 {
 	private: System::Windows::Forms::Label^  label18;
 	private: System::Windows::Forms::Label^  label21;
 	private: System::Windows::Forms::NumericUpDown^  persona_exp;
+    private: System::Windows::Forms::NumericUpDown^ MC_exp;
+    private: System::Windows::Forms::Label^ label22;
 
 
 	private: System::ComponentModel::IContainer^  components;
@@ -165,6 +167,8 @@ namespace persona3fespcsx2 {
             this->persona_skill2 = (gcnew System::Windows::Forms::ComboBox());
             this->persona_skill1 = (gcnew System::Windows::Forms::ComboBox());
             this->groupBox2 = (gcnew System::Windows::Forms::GroupBox());
+            this->MC_exp = (gcnew System::Windows::Forms::NumericUpDown());
+            this->label22 = (gcnew System::Windows::Forms::Label());
             this->num_mc_equip_persona = (gcnew System::Windows::Forms::NumericUpDown());
             this->num_mc_money = (gcnew System::Windows::Forms::NumericUpDown());
             this->label10 = (gcnew System::Windows::Forms::Label());
@@ -198,6 +202,7 @@ namespace persona3fespcsx2 {
             (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->persona_st))->BeginInit();
             (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->persona_level))->BeginInit();
             this->groupBox2->SuspendLayout();
+            (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->MC_exp))->BeginInit();
             (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->num_mc_equip_persona))->BeginInit();
             (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->num_mc_money))->BeginInit();
             (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->num_mc_courage))->BeginInit();
@@ -322,7 +327,7 @@ namespace persona3fespcsx2 {
             this->label16->AutoSize = true;
             this->label16->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->label16->Location = System::Drawing::Point(215, 287);
+            this->label16->Location = System::Drawing::Point(213, 287);
             this->label16->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
             this->label16->Name = L"label16";
             this->label16->Size = System::Drawing::Size(24, 17);
@@ -348,7 +353,7 @@ namespace persona3fespcsx2 {
             this->label15->AutoSize = true;
             this->label15->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->label15->Location = System::Drawing::Point(215, 255);
+            this->label15->Location = System::Drawing::Point(213, 255);
             this->label15->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
             this->label15->Name = L"label15";
             this->label15->Size = System::Drawing::Size(25, 17);
@@ -374,7 +379,7 @@ namespace persona3fespcsx2 {
             this->label14->AutoSize = true;
             this->label14->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->label14->Location = System::Drawing::Point(215, 223);
+            this->label14->Location = System::Drawing::Point(213, 223);
             this->label14->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
             this->label14->Name = L"label14";
             this->label14->Size = System::Drawing::Size(25, 17);
@@ -400,7 +405,7 @@ namespace persona3fespcsx2 {
             this->label13->AutoSize = true;
             this->label13->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->label13->Location = System::Drawing::Point(215, 192);
+            this->label13->Location = System::Drawing::Point(213, 192);
             this->label13->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
             this->label13->Name = L"label13";
             this->label13->Size = System::Drawing::Size(27, 17);
@@ -426,7 +431,7 @@ namespace persona3fespcsx2 {
             this->label12->AutoSize = true;
             this->label12->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->label12->Location = System::Drawing::Point(215, 160);
+            this->label12->Location = System::Drawing::Point(213, 160);
             this->label12->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
             this->label12->Name = L"label12";
             this->label12->Size = System::Drawing::Size(21, 17);
@@ -438,7 +443,7 @@ namespace persona3fespcsx2 {
             this->label11->AutoSize = true;
             this->label11->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->label11->Location = System::Drawing::Point(215, 54);
+            this->label11->Location = System::Drawing::Point(213, 54);
             this->label11->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
             this->label11->Name = L"label11";
             this->label11->Size = System::Drawing::Size(42, 17);
@@ -1133,6 +1138,8 @@ namespace persona3fespcsx2 {
             // 
             // groupBox2
             // 
+            this->groupBox2->Controls->Add(this->MC_exp);
+            this->groupBox2->Controls->Add(this->label22);
             this->groupBox2->Controls->Add(this->num_mc_equip_persona);
             this->groupBox2->Controls->Add(this->num_mc_money);
             this->groupBox2->Controls->Add(this->label10);
@@ -1162,11 +1169,36 @@ namespace persona3fespcsx2 {
             this->groupBox2->TabStop = false;
             this->groupBox2->Text = L"M.C. Stats";
             // 
+            // MC_exp
+            // 
+            this->MC_exp->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+                static_cast<System::Byte>(0)));
+            this->MC_exp->Location = System::Drawing::Point(8, 122);
+            this->MC_exp->Margin = System::Windows::Forms::Padding(4);
+            this->MC_exp->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 10000000, 0, 0, 0 });
+            this->MC_exp->Name = L"MC_exp";
+            this->MC_exp->Size = System::Drawing::Size(99, 23);
+            this->MC_exp->TabIndex = 19;
+            this->MC_exp->TextAlign = System::Windows::Forms::HorizontalAlignment::Right;
+            this->MC_exp->ValueChanged += gcnew System::EventHandler(this, &Form1::MC_exp_ValueChanged);
+            // 
+            // label22
+            // 
+            this->label22->AutoSize = true;
+            this->label22->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+                static_cast<System::Byte>(0)));
+            this->label22->Location = System::Drawing::Point(9, 92);
+            this->label22->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+            this->label22->Name = L"label22";
+            this->label22->Size = System::Drawing::Size(66, 17);
+            this->label22->TabIndex = 18;
+            this->label22->Text = L"Total exp";
+            // 
             // num_mc_equip_persona
             // 
             this->num_mc_equip_persona->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
                 System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-            this->num_mc_equip_persona->Location = System::Drawing::Point(8, 106);
+            this->num_mc_equip_persona->Location = System::Drawing::Point(152, 123);
             this->num_mc_equip_persona->Margin = System::Windows::Forms::Padding(4);
             this->num_mc_equip_persona->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 11, 0, 0, 0 });
             this->num_mc_equip_persona->Name = L"num_mc_equip_persona";
@@ -1178,7 +1210,7 @@ namespace persona3fespcsx2 {
             // 
             this->num_mc_money->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->num_mc_money->Location = System::Drawing::Point(151, 156);
+            this->num_mc_money->Location = System::Drawing::Point(151, 173);
             this->num_mc_money->Margin = System::Windows::Forms::Padding(4);
             this->num_mc_money->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 99999999, 0, 0, 0 });
             this->num_mc_money->Name = L"num_mc_money";
@@ -1191,7 +1223,7 @@ namespace persona3fespcsx2 {
             this->label10->AutoSize = true;
             this->label10->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->label10->Location = System::Drawing::Point(203, 137);
+            this->label10->Location = System::Drawing::Point(203, 149);
             this->label10->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
             this->label10->Name = L"label10";
             this->label10->Size = System::Drawing::Size(50, 17);
@@ -1203,18 +1235,18 @@ namespace persona3fespcsx2 {
             this->label9->AutoSize = true;
             this->label9->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->label9->Location = System::Drawing::Point(4, 86);
+            this->label9->Location = System::Drawing::Point(154, 85);
             this->label9->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
             this->label9->Name = L"label9";
-            this->label9->Size = System::Drawing::Size(153, 17);
+            this->label9->Size = System::Drawing::Size(89, 34);
             this->label9->TabIndex = 14;
-            this->label9->Text = L"Equipped Persona Slot";
+            this->label9->Text = L"Equipped\r\nPersona Slot";
             // 
             // num_mc_courage
             // 
             this->num_mc_courage->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->num_mc_courage->Location = System::Drawing::Point(184, 217);
+            this->num_mc_courage->Location = System::Drawing::Point(184, 226);
             this->num_mc_courage->Margin = System::Windows::Forms::Padding(4);
             this->num_mc_courage->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 99, 0, 0, 0 });
             this->num_mc_courage->Name = L"num_mc_courage";
@@ -1226,7 +1258,7 @@ namespace persona3fespcsx2 {
             // 
             this->num_mc_charm->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->num_mc_charm->Location = System::Drawing::Point(97, 217);
+            this->num_mc_charm->Location = System::Drawing::Point(97, 226);
             this->num_mc_charm->Margin = System::Windows::Forms::Padding(4);
             this->num_mc_charm->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 99, 0, 0, 0 });
             this->num_mc_charm->Name = L"num_mc_charm";
@@ -1238,7 +1270,7 @@ namespace persona3fespcsx2 {
             // 
             this->mc_academics->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->mc_academics->Location = System::Drawing::Point(8, 217);
+            this->mc_academics->Location = System::Drawing::Point(8, 226);
             this->mc_academics->Margin = System::Windows::Forms::Padding(4);
             this->mc_academics->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 260, 0, 0, 0 });
             this->mc_academics->Name = L"mc_academics";
@@ -1251,7 +1283,7 @@ namespace persona3fespcsx2 {
             this->label8->AutoSize = true;
             this->label8->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->label8->Location = System::Drawing::Point(184, 197);
+            this->label8->Location = System::Drawing::Point(184, 206);
             this->label8->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
             this->label8->Name = L"label8";
             this->label8->Size = System::Drawing::Size(62, 17);
@@ -1263,7 +1295,7 @@ namespace persona3fespcsx2 {
             this->label7->AutoSize = true;
             this->label7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->label7->Location = System::Drawing::Point(111, 197);
+            this->label7->Location = System::Drawing::Point(111, 206);
             this->label7->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
             this->label7->Name = L"label7";
             this->label7->Size = System::Drawing::Size(49, 17);
@@ -1275,7 +1307,7 @@ namespace persona3fespcsx2 {
             this->label6->AutoSize = true;
             this->label6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->label6->Location = System::Drawing::Point(4, 197);
+            this->label6->Location = System::Drawing::Point(4, 206);
             this->label6->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
             this->label6->Name = L"label6";
             this->label6->Size = System::Drawing::Size(76, 17);
@@ -1287,7 +1319,7 @@ namespace persona3fespcsx2 {
             this->label5->AutoSize = true;
             this->label5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->label5->Location = System::Drawing::Point(8, 137);
+            this->label5->Location = System::Drawing::Point(8, 153);
             this->label5->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
             this->label5->Name = L"label5";
             this->label5->Size = System::Drawing::Size(43, 17);
@@ -1305,7 +1337,7 @@ namespace persona3fespcsx2 {
                 static_cast<System::Byte>(0)));
             this->mc_mood->FormattingEnabled = true;
             this->mc_mood->Items->AddRange(gcnew cli::array< System::Object^  >(4) { L"Good", L"Normal", L"Great", L"Tired" });
-            this->mc_mood->Location = System::Drawing::Point(8, 156);
+            this->mc_mood->Location = System::Drawing::Point(8, 172);
             this->mc_mood->Margin = System::Windows::Forms::Padding(4);
             this->mc_mood->Name = L"mc_mood";
             this->mc_mood->Size = System::Drawing::Size(99, 25);
@@ -1383,7 +1415,7 @@ namespace persona3fespcsx2 {
             this->num_mc_level->Size = System::Drawing::Size(59, 23);
             this->num_mc_level->TabIndex = 0;
             this->num_mc_level->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
-            this->num_mc_level->ValueChanged += gcnew System::EventHandler(this, &Form1::numericUpDown1_ValueChanged);
+            this->num_mc_level->ValueChanged += gcnew System::EventHandler(this, &Form1::num_mc_level_ValueChanged);
             // 
             // timer1
             // 
@@ -1432,24 +1464,26 @@ namespace persona3fespcsx2 {
             this->persona_exp->Enabled = false;
             this->persona_exp->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->persona_exp->Location = System::Drawing::Point(309, 85);
+            this->persona_exp->Location = System::Drawing::Point(313, 85);
             this->persona_exp->Margin = System::Windows::Forms::Padding(4);
+            this->persona_exp->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 10000000, 0, 0, 0 });
             this->persona_exp->Name = L"persona_exp";
-            this->persona_exp->Size = System::Drawing::Size(143, 23);
+            this->persona_exp->Size = System::Drawing::Size(139, 23);
             this->persona_exp->TabIndex = 44;
             this->persona_exp->TextAlign = System::Windows::Forms::HorizontalAlignment::Right;
+            this->persona_exp->ValueChanged += gcnew System::EventHandler(this, &Form1::persona_exp_ValueChanged);
             // 
             // label21
             // 
             this->label21->AutoSize = true;
             this->label21->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->label21->Location = System::Drawing::Point(215, 87);
+            this->label21->Location = System::Drawing::Point(213, 87);
             this->label21->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
             this->label21->Name = L"label21";
-            this->label21->Size = System::Drawing::Size(75, 17);
+            this->label21->Size = System::Drawing::Size(99, 34);
             this->label21->TabIndex = 43;
-            this->label21->Text = L"Nex lvl exp";
+            this->label21->Text = L"Total exp\r\n(Accumulated)";
             // 
             // label19
             // 
@@ -1507,6 +1541,7 @@ namespace persona3fespcsx2 {
             (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->persona_level))->EndInit();
             this->groupBox2->ResumeLayout(false);
             this->groupBox2->PerformLayout();
+            (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->MC_exp))->EndInit();
             (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->num_mc_equip_persona))->EndInit();
             (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->num_mc_money))->EndInit();
             (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->num_mc_courage))->EndInit();
@@ -1524,13 +1559,14 @@ namespace persona3fespcsx2 {
 #pragma endregion
 	private: System::Void Form1_Load(System::Object^  sender, System::EventArgs^  e);
 	private: System::Void PersonaBox_SelectionChangeCommitted(System::Object^  sender, System::EventArgs^  e);
-	private: System::Void numericUpDown1_ValueChanged(System::Object^  sender, System::EventArgs^  e);
+	private: System::Void num_mc_level_ValueChanged(System::Object^  sender, System::EventArgs^  e);
+	private: System::Void MC_exp_ValueChanged(System::Object^  sender, System::EventArgs^  e);
 	private: System::Void timer1_Tick(System::Object^  sender, System::EventArgs^  e);
 	private: System::Void num_mc_current_hp_ValueChanged(System::Object^  sender, System::EventArgs^  e);
 	private: System::Void num_mc_current_mp_ValueChanged(System::Object^  sender, System::EventArgs^  e);
 	private: System::Void mc_mood_SelectionChangeCommitted(System::Object^  sender, System::EventArgs^  e);
 	private: System::Void setValue(LONG pokeAddress, int value, int byteSize);
-	private: System::Void readValue();
+	private: System::Void readValuesPersona();
 	private: System::Void mc_academics_ValueChanged(System::Object^  sender, System::EventArgs^  e);
 	private: System::Void num_mc_charm_ValueChanged(System::Object^  sender, System::EventArgs^  e);	
 	private: System::Void num_mc_courage_ValueChanged(System::Object^  sender, System::EventArgs^  e);
@@ -1538,6 +1574,7 @@ namespace persona3fespcsx2 {
 	private: System::Void num_mc_money_ValueChanged(System::Object^  sender, System::EventArgs^  e);
 	private: System::Void SlotBox_SelectedIndexChanged(System::Object^	sender, System::EventArgs^	e);
 	private: System::Void persona_level_ValueChanged(System::Object^  sender, System::EventArgs^  e);
+	private: System::Void persona_exp_ValueChanged(System::Object^  sender, System::EventArgs^  e);
 	private: System::Void persona_st_ValueChanged(System::Object^  sender, System::EventArgs^  e);
 	private: System::Void persona_ma_ValueChanged(System::Object^  sender, System::EventArgs^  e);
 	private: System::Void persona_en_ValueChanged(System::Object^  sender, System::EventArgs^  e);
@@ -1551,6 +1588,7 @@ namespace persona3fespcsx2 {
 	private: System::Void persona_skill6_SelectionChangeCommitted(System::Object^  sender, System::EventArgs^  e);
 	private: System::Void persona_skill7_SelectionChangeCommitted(System::Object^  sender, System::EventArgs^  e);
 	private: System::Void persona_skill8_SelectionChangeCommitted(System::Object^  sender, System::EventArgs^  e);
+
 
 };
 }
