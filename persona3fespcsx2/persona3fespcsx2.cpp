@@ -120,7 +120,7 @@ System::Void Form1::PersonaBox_SelectionChangeCommitted(System::Object^  sender,
 
 	int desiredPersona = index;
 
-	setValue(COffsets::persona1_modifer, index, 2);
+	setValue(ValueOffsets.modifier, index, 2);
 }
 
 System::Void Form1::num_mc_level_ValueChanged(System::Object^  sender, System::EventArgs^  e)
